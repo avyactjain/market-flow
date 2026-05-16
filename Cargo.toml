@@ -1,0 +1,38 @@
+[package]
+name = "market-flow"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+authors = ["Avyact Jain"]
+description = "Async NDJSON stream of market events (snapshots, depth updates, trades) for Tokio"
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/avyactjain/market-flow"
+homepage = "https://github.com/avyactjain/market-flow"
+documentation = "https://docs.rs/market-flow"
+keywords = ["market-data", "ndjson", "orderbook", "tokio", "serde"]
+categories = ["parser-implementations", "asynchronous"]
+publish = true
+
+[dependencies]
+chrono = { version = "0.4.44", features = ["serde"] }
+futures = "0.3.31"
+rust_decimal = { version = "1.42.0", features = ["serde"] }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+smol_str = { version = "0.3.2", features = ["serde"] }
+tokio = { version = "1.48", features = ["fs", "io-util", "macros", "rt-multi-thread"] }
+tokio-stream = { version = "0.1.18", features = ["io-util"] }
+
+[dev-dependencies]
+criterion = { version = "0.5.1", features = ["html_reports"] }
+futures = "0.3.31"
+tokio = { version = "1.48", features = ["fs", "io-util", "macros", "rt-multi-thread"] }
+
+[[bench]]
+name = "market_flow"
+harness = false
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]

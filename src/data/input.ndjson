@@ -1,0 +1,10 @@
+{"ts":1000000000,"symbol":"BTC-USDT","type":"snapshot","bids":[[10000000,5],[9999900,8],[9999800,12]],"asks":[[10000100,4],[10000200,6],[10000300,10]]}
+{"ts":1000000100,"symbol":"BTC-USDT","type":"depth_batch","bids":[[10000000,7],[9999900,10]],"asks":[[10000100,3]]}
+{"ts":1000000200,"symbol":"BTC-USDT","type":"trade","side":"buy","price":10000100,"qty":1}
+{"ts":1000000300,"symbol":"BTC-USDT","type":"depth_batch","bids":[],"asks":[[10000200,0],[10000300,7]]}
+{"ts":1000000400,"symbol":"ETH-USDT","type":"snapshot","bids":[[250000,15],[249900,20]],"asks":[[250100,12],[250200,18]]}
+{"ts":1000000500,"symbol":"ETH-USDT","type":"depth_batch","bids":[[250000,18]],"asks":[[250100,9],[250200,15]]}
+{"ts":1000000600,"symbol":"ETH-USDT","type":"trade","side":"sell","price":250000,"qty":4}
+{"ts":1000000700,"symbol":"BTC-USDT","type":"depth_batch","bids":[[10000000,9]],"asks":[]}
+{"ts":1000000800,"symbol":"BTC-USDT","type":"trade","side":"sell","price":10000000,"qty":6}
+{"ts":1000000900,"symbol":"BTC-USDT","type":"depth_batch","bids":[[9999800,0]],"asks":[[10000100,5]]}
